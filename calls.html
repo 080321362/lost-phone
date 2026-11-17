@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>通话记录 · 失物招领</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="calls">
+  <div class="phone">
+    <div class="statusbar dark">
+      <span id="clock">22:20</span>
+      <span class="right"><span>5G</span><span class="battery"></span></span>
+    </div>
+    <div class="cluebar" id="clueBadge">线索 1/6</div>
+
+    <div class="screen">
+      <div class="screen-head">
+        <a class="back" href="home.html">←</a>
+        <div class="screen-title">通话</div>
+        <div class="screen-sub">3 条留言</div>
+      </div>
+      <div class="screen-body">
+        <div class="call-card" data-call="1">
+          <div class="call-top"><span class="avatar a-mom">妈</span><span class="call-name">妈妈</span><span class="call-time">21:05</span></div>
+          <div class="call-meta">未接来电 · 语音留言 0:18</div>
+          <button class="call-play">播放留言</button>
+          <div class="call-text" hidden>「夏夏，看到回个电话。妈不问你查得怎么样了，妈就是想听听你的声音。」</div>
+        </div>
+
+        <div class="call-card" data-call="2">
+          <div class="call-top"><span class="avatar a-unk">?</span><span class="call-name">未知号码</span><span class="call-time">昨天 22:47</span></div>
+          <div class="call-meta">已接听 · 语音留言 0:11</div>
+          <button class="call-play">播放留言</button>
+          <div class="call-text" hidden>「东西我放到老地方了。西河路……十七号，三楼。你一个人来，别报警。」</div>
+        </div>
+
+        <div class="call-card" data-call="3">
+          <div class="call-top"><span class="avatar a-land">满</span><span class="call-name">小满</span><span class="call-time">22:10</span></div>
+          <div class="call-meta">未接来电 · 语音留言 0:07</div>
+          <button class="call-play">播放留言</button>
+          <div class="call-text" hidden>「夏夏，你电话打不通，你去哪了？看到给我回个话。」</div>
+        </div>
+
+        <div class="puzzle-box">
+          <div class="pz-title">留言里提到的地址</div>
+          <p class="small" style="margin:6px 0 10px">把地点写下来，再决定要不要去。</p>
+          <div class="inline-form">
+            <input id="placeInput" placeholder="例如：某某路几号">
+            <button id="placeSubmit">确认</button>
+          </div>
+          <p class="form-error" id="placeErr">不太对。仔细听第二段留言。</p>
+          <p class="form-ok" id="placeOk">记下了：西河路 17 号，三楼。</p>
+        </div>
+
+        <p class="small" style="margin-top:16px">留言可以反复听。有些话，听第二遍才听得懂。</p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
