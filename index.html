@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>失物招领 · 一部旧手机</title>
+<meta name="theme-color" content="#0b0e13">
+<meta property="og:type" content="website">
+<meta property="og:title" content="失物招领 · 一部旧手机里的三个谜题">
+<meta property="og:description" content="你在出租车上捡到一部旧手机。三个谜题，两个结局。">
+<meta property="og:image" content="cover.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="lock">
+  <div class="phone">
+    <div class="statusbar">
+      <span>21:47</span>
+      <span class="right"><span>5G</span><span class="battery"></span></span>
+    </div>
+
+    <div class="lockscreen" id="lockscreen">
+      <div class="clock">21:47</div>
+      <div class="date">3月16日 星期六</div>
+
+      <div class="notifications">
+        <div class="notif">
+          <div class="n-title"><span>日历</span><span>现在</span></div>
+          <div class="n-body">明天是<b>妈妈的生日</b>，别忘了。</div>
+          <div class="cake">
+            <div class="cake-art"></div>
+            <div class="cake-copy">提醒设置了很久：<br>每年这一天，回家吃饭。</div>
+          </div>
+        </div>
+        <div class="notif">
+          <div class="n-title"><span>打车</span><span>21:32</span></div>
+          <div class="n-body">行程已结束 · 人民路到兴达路 · 18.00 元</div>
+        </div>
+      </div>
+
+      <div class="unlock">
+        <div class="pin-hint">输入四位锁屏密码</div>
+        <div class="dots" id="dots">
+          <span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span><span class="dot"></span>
+        </div>
+        <div class="pin-error" id="pinError">密码不对，再想想。</div>
+
+        <div class="keypad" id="keypad">
+          <button class="key" data-k="1">1</button>
+          <button class="key" data-k="2">2</button>
+          <button class="key" data-k="3">3</button>
+          <button class="key" data-k="4">4</button>
+          <button class="key" data-k="5">5</button>
+          <button class="key" data-k="6">6</button>
+          <button class="key" data-k="7">7</button>
+          <button class="key" data-k="8">8</button>
+          <button class="key" data-k="9">9</button>
+          <button class="key blank"></button>
+          <button class="key" data-k="0">0</button>
+          <button class="key del" data-k="del">⌫</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
