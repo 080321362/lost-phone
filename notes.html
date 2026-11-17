@@ -9,37 +9,30 @@
 <body data-page="notes">
   <div class="phone">
     <div class="statusbar dark">
-      <span id="clock">21:54</span>
+      <span id="clock">22:18</span>
       <span class="right"><span>5G</span><span class="battery"></span></span>
     </div>
-    <div class="cluebar" id="clueBadge">线索 1/3</div>
+    <div class="cluebar" id="clueBadge">线索 1/6</div>
 
     <div class="screen">
       <div class="screen-head">
         <a class="back" href="home.html">←</a>
         <div class="screen-title">备忘录</div>
-        <div class="screen-sub">3 条</div>
+        <div class="screen-sub">5 条</div>
       </div>
       <div class="screen-body">
         <div class="note" data-note="1">
-          <button class="note-head">
-            <span class="tag">待办</span>
-            <span class="nt">这周</span>
-            <span class="nd">3月15日</span>
-          </button>
+          <button class="note-head"><span class="tag">待办</span><span class="nt">这周</span><span class="nd">3月15日</span></button>
           <div class="note-body">
             给妈买降压药，还是原来那个牌子。<br>
             干洗店取外套，单子在玄关抽屉。<br>
-            房租 15 号前转给王姐，别忘了。
+            房租 15 号前转给王姐，别忘了。<br>
+            还有，把遥遥房间的窗帘洗了。
           </div>
         </div>
 
         <div class="note" data-note="2">
-          <button class="note-head">
-            <span class="tag">工作</span>
-            <span class="nt">交接清单</span>
-            <span class="nd">3月12日</span>
-          </button>
+          <button class="note-head"><span class="tag">工作</span><span class="nt">交接清单</span><span class="nd">3月12日</span></button>
           <div class="note-body">
             拾光书店，钥匙两把，一把给周店长。<br>
             窗台上那盆薄荷，隔天浇一次。<br>
@@ -49,11 +42,7 @@
         </div>
 
         <div class="note" data-note="3">
-          <button class="note-head">
-            <span class="tag">私人</span>
-            <span class="nt">如果</span>
-            <span class="nd">3月14日</span>
-          </button>
+          <button class="note-head"><span class="tag">私人</span><span class="nt">如果</span><span class="nd">3月14日</span></button>
           <div class="note-body">
             如果有一天我不见了，别找我。<br>
             我只是想一个人待几天，把一些事情想清楚。<br>
@@ -62,9 +51,39 @@
           </div>
         </div>
 
-        <p class="small" style="margin-top:18px">
-          点开一条即可展开，看过的会自动记住。
-        </p>
+        <div class="note locked" data-note="4" id="lockedNote">
+          <button class="note-head"><span class="tag">加密</span><span class="nt">🔒 还不能看</span><span class="nd">3月16日</span></button>
+          <div class="note-body">
+            <p class="small" style="margin-top:0">这条笔记需要四位密码。</p>
+            <div class="inline-form">
+              <input id="notePw" inputmode="numeric" maxlength="4" placeholder="四位密码">
+              <button id="noteUnlock">解锁</button>
+            </div>
+            <p class="form-error" id="noteErr">密码不对。想想遥遥最后一次联系我，是哪一天。</p>
+          </div>
+        </div>
+
+        <div class="note locked" data-note="4b" id="unlockedNote" hidden>
+          <button class="note-head"><span class="tag">加密</span><span class="nt">灯下</span><span class="nd">3月16日</span></button>
+          <div class="note-body">
+            灯下读书会，西河路 17 号，3F。<br>
+            正门有人看，晚上十点以后只开一扇窗。<br>
+            遥遥最后一条消息是 9 月 12 日，四个月了。<br><br>
+            如果我没回来，把手机交给警察。<br>
+            别自己上去。
+          </div>
+        </div>
+
+        <div class="note" data-note="5">
+          <button class="note-head"><span class="tag">遥遥</span><span class="nt">9 月 12 日</span><span class="nd">3月16日</span></button>
+          <div class="note-body">
+            遥遥最后一次给我发消息，是 9 月 12 日。<br>
+            只有四个字：<b>「姐，别找我。」</b><br><br>
+            我不信。她连外卖都不敢一个人点，怎么会自己走。
+          </div>
+        </div>
+
+        <p class="small" style="margin-top:18px">点开一条即可展开，看过的会自动记住。</p>
       </div>
     </div>
   </div>
