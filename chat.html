@@ -9,42 +9,42 @@
 <body data-page="chat">
   <div class="phone">
     <div class="statusbar dark">
-      <span id="clock">21:56</span>
+      <span id="clock">22:16</span>
       <span class="right"><span>5G</span><span class="battery"></span></span>
     </div>
-    <div class="cluebar" id="clueBadge">线索 1/3</div>
+    <div class="cluebar" id="clueBadge">线索 1/6</div>
 
     <div class="screen">
       <div class="screen-head">
         <a class="back" href="home.html">←</a>
         <div class="screen-title" id="chatTitle">聊天</div>
-        <div class="screen-sub" id="chatSub">3 个会话</div>
+        <div class="screen-sub" id="chatSub">4 个会话</div>
       </div>
 
       <div class="screen-body">
         <div class="chat-list" id="chatList">
           <a class="chat-item" href="#" data-chat="mom">
             <span class="avatar a-mom">妈</span>
-            <span class="ci-main">
-              <span class="ci-name">妈妈</span>
-              <span class="ci-prev">明天我生日，回来吃碗面就行。</span>
-            </span>
-            <span class="ci-time">21:41</span>
+            <span class="ci-main"><span class="ci-name">妈妈</span>
+              <span class="ci-prev">你妹妹的事，妈知道你放不下。</span></span>
+            <span class="ci-time">22:12</span>
           </a>
           <a class="chat-item" href="#" data-chat="boss">
             <span class="avatar a-boss">周</span>
-            <span class="ci-main">
-              <span class="ci-name">周店长</span>
-              <span class="ci-prev">天台的薄荷记得带走，你养得比我好。</span>
-            </span>
-            <span class="ci-time">20:38</span>
+            <span class="ci-main"><span class="ci-name">周店长</span>
+              <span class="ci-prev">前两天有个女的来店里找你，说是读书会的。</span></span>
+            <span class="ci-time">21:38</span>
           </a>
-          <a class="chat-item" href="#" data-chat="land">
-            <span class="avatar a-land">王</span>
-            <span class="ci-main">
-              <span class="ci-name">房东王姐</span>
-              <span class="ci-prev">你那边没事吧？最近总看你很晚才回来。</span>
-            </span>
+          <a class="chat-item" href="#" data-chat="friend">
+            <span class="avatar a-land">满</span>
+            <span class="ci-main"><span class="ci-name">小满</span>
+              <span class="ci-prev">我表妹去过。她说那里的人会收走手机。</span></span>
+            <span class="ci-time">22:03</span>
+          </a>
+          <a class="chat-item" href="#" data-chat="unknown">
+            <span class="avatar a-unk">?</span>
+            <span class="ci-main"><span class="ci-name">未知号码</span>
+              <span class="ci-prev">最后一次警告。</span></span>
             <span class="ci-time">昨天</span>
           </a>
         </div>
@@ -57,26 +57,46 @@
           <div class="msg"><div><div class="who">妈妈</div><div class="bubble">电话也不接。</div></div><span class="stamp">21:05</span></div>
           <div class="msg"><div><div class="who">妈妈</div><div class="bubble">看到回个话，妈不逼你。</div></div><span class="stamp">21:20</span></div>
           <div class="msg"><div><div class="who">妈妈</div><div class="bubble">明天我生日，回来吃碗面就行。</div></div><span class="stamp">21:41</span></div>
+          <div class="msg"><div><div class="who">妈妈</div><div class="bubble">你妹妹的事，妈知道你放不下。</div></div><span class="stamp">22:10</span></div>
+          <div class="msg"><div><div class="who">妈妈</div><div class="bubble">可你也不能把自己搭进去。</div></div><span class="stamp">22:12</span></div>
         </div>
 
-        <!-- 周店长 -->
+        <!-- 店长 -->
         <div class="thread" id="thread-boss" hidden>
           <div class="msg"><div><div class="who">周店长</div><div class="bubble">知夏，辞职信我收到了。</div></div><span class="stamp">19:02</span></div>
           <div class="msg me"><div><div class="bubble">麻烦您了。</div></div><span class="stamp">19:10</span></div>
           <div class="msg"><div><div class="who">周店长</div><div class="bubble">不再想想？书店下个月重装，缺人。</div></div><span class="stamp">19:12</span></div>
           <div class="msg me"><div><div class="bubble">想清楚了。</div></div><span class="stamp">19:20</span></div>
-          <div class="msg"><div><div class="who">周店长</div><div class="bubble">行。天台的薄荷记得带走，你养得比我好。</div></div><span class="stamp">20:38</span></div>
-          <div class="msg me"><div><div class="bubble">留给下一个人吧。</div></div><span class="stamp">20:40</span></div>
+          <div class="msg"><div><div class="who">周店长</div><div class="bubble">行。天台的门锁坏了，你走之前帮我修一下。</div></div><span class="stamp">19:25</span></div>
+          <div class="msg me"><div><div class="bubble">好。薄荷我留给你。</div></div><span class="stamp">19:30</span></div>
+          <div class="msg"><div><div class="who">周店长</div><div class="bubble">对了，前两天有个女的来店里找你，说是读书会的。</div></div><span class="stamp">21:31</span></div>
+          <div class="msg"><div><div class="who">周店长</div><div class="bubble">我没告诉她你在哪。</div></div><span class="stamp">21:38</span></div>
         </div>
 
-        <!-- 房东 -->
-        <div class="thread" id="thread-land" hidden>
-          <div class="msg"><div><div class="who">房东王姐</div><div class="bubble">这个月房租别忘了。</div></div><span class="stamp">昨天 09:12</span></div>
-          <div class="msg me"><div><div class="bubble">明天转。</div></div><span class="stamp">昨天 09:20</span></div>
-          <div class="msg"><div><div class="who">房东王姐</div><div class="bubble">你那边没事吧？最近总看你很晚才回来。</div></div><span class="stamp">昨天 22:05</span></div>
+        <!-- 小满 -->
+        <div class="thread" id="thread-friend" hidden>
+          <div class="msg"><div><div class="who">小满</div><div class="bubble">夏夏，你还在查遥遥的事吗？</div></div><span class="stamp">21:50</span></div>
+          <div class="msg me"><div><div class="bubble">嗯。</div></div><span class="stamp">21:52</span></div>
+          <div class="msg"><div><div class="who">小满</div><div class="bubble">我陪你吧。</div></div><span class="stamp">21:53</span></div>
+          <div class="msg me"><div><div class="bubble">不用，你别掺和。</div></div><span class="stamp">21:55</span></div>
+          <div class="msg"><div><div class="who">小满</div><div class="bubble">那个读书会，我查到了点东西。</div></div><span class="stamp">21:58</span></div>
+          <div class="msg"><div><div class="who">小满</div><div class="bubble">他们的自习室在 3 楼，晚上十点以后还亮着灯。</div></div><span class="stamp">21:59</span></div>
+          <div class="msg me"><div><div class="bubble">你怎么知道的？</div></div><span class="stamp">22:00</span></div>
+          <div class="msg"><div><div class="who">小满</div><div class="bubble">我表妹去过。她说那里的人会收走手机。</div></div><span class="stamp">22:01</span></div>
+          <div class="msg me"><div><div class="bubble">你表妹现在怎么样？</div></div><span class="stamp">22:02</span></div>
+          <div class="msg"><div><div class="who">小满</div><div class="bubble">回来了，但什么都不肯说。你小心点。</div></div><span class="stamp">22:03</span></div>
         </div>
 
-        <p class="small" id="chatHint" style="margin-top:18px">点开一个会话看看。</p>
+        <!-- 未知号码 -->
+        <div class="thread" id="thread-unknown" hidden>
+          <div class="msg"><div><div class="who">未知号码</div><div class="bubble">别再查了。</div></div><span class="stamp">昨天 22:40</span></div>
+          <div class="msg"><div><div class="who">未知号码</div><div class="bubble">你妹妹是自己走的，跟你没关系。</div></div><span class="stamp">昨天 22:41</span></div>
+          <div class="msg"><div><div class="who">未知号码</div><div class="bubble">你手里的东西，最好删干净。</div></div><span class="stamp">昨天 22:44</span></div>
+          <div class="msg"><div><div class="who">未知号码</div><div class="bubble">你以为换个号我就找不到你？</div></div><span class="stamp">昨天 22:50</span></div>
+          <div class="msg"><div><div class="who">未知号码</div><div class="bubble">最后一次警告。</div></div><span class="stamp">昨天 22:55</span></div>
+        </div>
+
+        <p class="small" id="chatHint" style="margin-top:18px">点开一个会话看看。读完妈妈的聊天，你会知道机主是谁。</p>
       </div>
     </div>
   </div>
