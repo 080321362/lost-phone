@@ -375,7 +375,8 @@ body {
 @keyframes spin { to { transform: rotate(360deg); } }
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; }
 .tile {
-  position: relative; aspect-ratio: 1; border-radius: 10px; overflow: hidden;
+  position: relative; height: 0; padding-top: 100%;
+  border-radius: 10px; overflow: hidden;
   border: 1px solid rgba(0,0,0,.05); cursor: pointer;
 }
 .tile .cap {
@@ -406,7 +407,10 @@ body {
 }
 .viewer.show { display: grid; }
 .viewer .frame { width: 100%; }
-.viewer .big { aspect-ratio: 3/4; border-radius: 18px; position: relative; overflow: hidden; }
+.viewer .big {
+  height: 0; padding-top: 133%;
+  border-radius: 18px; position: relative; overflow: hidden;
+}
 .viewer .desc { color: #e9e4da; font-size: 13px; line-height: 1.7; margin-top: 14px; }
 
 /* 结局 */
