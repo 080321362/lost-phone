@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>浏览器 · 失物招领</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-page="browser">
+  <div class="phone">
+    <div class="statusbar dark">
+      <span id="clock">22:24</span>
+      <span class="right"><span>5G</span><span class="battery"></span></span>
+    </div>
+    <div class="cluebar" id="clueBadge">线索 1/6</div>
+
+    <div class="screen">
+      <div class="screen-head">
+        <a class="back" href="home.html">←</a>
+        <div class="screen-title">浏览器</div>
+        <div class="screen-sub">历史记录</div>
+      </div>
+      <div class="screen-body">
+        <div class="browser-bar">
+          <span class="lock">🔒</span>
+          <span class="url">xhs-bbs.cn/forum</span>
+        </div>
+
+        <div class="history">
+          <div class="h-item"><span>昨天</span>灯下读书会 靠谱吗</div>
+          <div class="h-item"><span>昨天</span>西河路17号 怎么走</div>
+          <div class="h-item"><span>前天</span>妹妹失踪 立案标准</div>
+          <div class="h-item"><span>三周前</span>西河路论坛 读书会</div>
+        </div>
+
+        <div class="forum-card">
+          <div class="forum-head">
+            <span class="forum-logo">西河路论坛</span>
+            <span class="forum-time">9月12日 23:41</span>
+          </div>
+          <div class="forum-title">有人在灯下读书会吗</div>
+          <div class="forum-author">楼主：zhiyao0912</div>
+          <div class="forum-body">
+            如果你看到这条，说明我没能出去。<br>
+            他们在 <b>d x e c</b>，晚上十点以后别走正门。<br>
+            姐，别找我。
+          </div>
+          <div class="forum-reply">2 条回复 · 已被锁定</div>
+        </div>
+
+        <div class="puzzle-box">
+          <div class="pz-title">「d x e c」是哪里？</div>
+          <p class="small" style="margin:6px 0 10px">拼音首字母。把答案填完整。</p>
+          <div class="inline-form">
+            <input id="forumInput" placeholder="例如：地下二层">
+            <button id="forumSubmit">提交</button>
+          </div>
+          <p class="form-error" id="forumErr">不对。按每个字母对应的汉字去想。</p>
+          <p class="form-ok" id="forumOk">知道了：地下二层。</p>
+        </div>
+
+        <div class="map-card">
+          <div class="map-head">地图 · 西河路 17 号</div>
+          <div class="map-art">
+            <div class="map-road"></div>
+            <div class="map-pin">17</div>
+            <div class="map-note">3F · 01:12 仍有一扇窗亮着</div>
+          </div>
+        </div>
+
+        <p class="small" style="margin-top:16px">搜索记录和论坛都是公开的。真正的答案通常藏在措辞里。</p>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
